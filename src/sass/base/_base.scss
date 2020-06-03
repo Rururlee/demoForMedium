@@ -1,0 +1,44 @@
+html {
+  font-size: 0.8rem;
+  position: relative;
+}
+
+@media (min-width: 576px) {
+  html {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 992px) {
+  html {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 1200px) {
+  html {
+    font-size: 1em;
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: #611409;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  flex: 1 0 auto;
+  margin-bottom: 6rem;
+}

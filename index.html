@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>傳奇 跨世代 demo</title>
+    <link rel="stylesheet" href="css/all.css" />
+  </head>
+
+  <body>
+    <div class="content-wrapper position-relative">
+      <section class="top-box"></section>
+      <div class="bg"><img src="img/title-bg.jpg" alt="" /></div>
+      <header class="header">
+        <div class="title">
+          <img src="img/title.png" alt="" />
+        </div>
+      </header>
+
+      <main class="main">
+        <video controls class="video" autoplay="autoplay">
+          <source src="video.mov" type="video/mp4" />
+        </video>
+        <img class="video__bg" src="img/video-background.png" alt="" />
+
+        <section class="main-area">
+          <!--預約倒數 開始-->
+          <!--主倒數窗口-->
+          <div class="countdown">
+            <div class="countdown__top"></div>
+            <div class="countdown__center">
+              <div class="day">
+                <div class="timer__item">
+                  <div class="day-d">08</div>
+                  <div class="mini">days</div>
+                </div>
+                <div class="colon">：</div>
+                <div class="timer__item">
+                  <div class="day-h">08</div>
+                  <div class="mini">hours</div>
+                </div>
+                <div class="colon">：</div>
+                <div class="timer__item">
+                  <div class="day-m">08</div>
+                  <div class="mini">minutes</div>
+                </div>
+                <div class="colon">：</div>
+                <div class="timer__item">
+                  <div class="day-s">08</div>
+                  <div class="mini">second</div>
+                </div>
+              </div>
+
+              <!-- 要滑動到這塊才開始跑進度條 -->
+              <div class="goal">
+                <div class="start_end_time">
+                  <span>2020.06.02</span>
+                  <span>2020.06.07</span>
+                </div>
+                <div class="progress">
+                  <div style="width: 0; transition: 1.5s linear;" class="progress-bar prog" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="goal__count">
+                  <div class="count-2000">
+                    <div class="line"></div>
+                    <div>2000人</div>
+                  </div>
+                  <div class="count-5000">
+                    <div class="line"></div>
+                    <div>5000人</div>
+                  </div>
+                  <div class="count-10000">
+                    <div class="line"></div>
+                    <div>10000人</div>
+                  </div>
+                  <div class="count-20000">
+                    <div class="line"></div>
+                    <div>20000人</div>
+                  </div>
+                </div>
+              </div>
+              <div class="reserve">
+                <a href="javascript:;"><img class="reserve-1" src="img/button-login.png" alt="立即預約" /></a>
+                <a href="javascript:;"><img class="reserve-2" src="img/button-share.png" alt="邀請好友" /></a>
+              </div>
+            </div>
+            <div class="countdown__bottom"></div>
+          </div>
+          <!--第二倒數窗口 定位右下 開始-->
+          <div class="countdown-bot">
+            <div class="countdown-bot__top"></div>
+            <div class="countdown-bot__center">
+              <div class="day timer"></div>
+
+              <!-- 要滑動到這塊才開始跑進度條 -->
+              <div class="goal">
+                <div class="progress">
+                  <div style="width: 0; transition: 1.5s linear;" class="progress-bar prog" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="countdown-bot__reserve">
+                <a href="javascript:;"><img src="img/button-login2.png" alt="立即預約" /></a>
+                <a href="javascript:;"><img src="img/button-share2.png" alt="邀請好友" /></a>
+              </div>
+            </div>
+            <div class="countdown-bot__bottom"></div>
+          </div>
+          <!--第二倒數窗口 定位右下結束-->
+
+          <!--手機版 定位手機底部 開始-->
+          <div class="countdown-mobile">
+            <div class="goal">
+              <div class="progress">
+                <div style="width: 0; transition: 1.5s linear;" class="progress-bar prog" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="countdown-mobile__center">
+              <div class="day timer"></div>
+              <div class="countdown-mobile__reserve">
+                <a href="javascript:;"><img src="img/button-login2.png" alt="立即預約" /></a>
+                <a href="javascript:;"><img src="img/button-share2.png" alt="邀請好友" /></a>
+              </div>
+            </div>
+          </div>
+          <!--手機版 定位手機底部 結束-->
+
+          <!--預約倒數 結束-->
+
+          <div class="divider countdownEnd"><img src="img/divider.png" alt="" /></div>
+
+          <!--事前預約送好康 開始-->
+          <div class="cotent-box">
+            <div class="big-title-img"><img src="img/title-01.png" alt="" /></div>
+            <div class="small-title">活動期間，預約人數累積達成2千人、5千人、1萬人，以及2萬人等目標，便可獲得多項好禮。</div>
+            <div class="gift">
+              <div class="gift__item">
+                <img src="img/gift-01.png" alt="" />
+                <div>
+                  <div>扶搖直上禮包</div>
+                  <span class="h6">達 2,000 人解鎖</span>
+                </div>
+              </div>
+              <div class="gift__item">
+                <img src="img/gift-02.png" alt="" />
+                <div>
+                  <div>強化大禮包</div>
+                  <span class="h6">達 5,000 人解鎖</span>
+                </div>
+              </div>
+              <div class="gift__item">
+                <img src="img/gift-03.png" alt="" />
+                <div>
+                  <div>神兵特戒禮包</div>
+                  <span class="h6">達 10,000 人解鎖</span>
+                </div>
+              </div>
+              <div class="gift__item">
+                <img src="img/gift-04.png" alt="" />
+                <div>
+                  <div>轉生神裝禮包</div>
+                  <span class="h6">達 20,000 人解鎖</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--事前預約送好康 結束-->
+
+          <div class="divider"><img src="img/divider.png" alt="" /></div>
+
+          <!--邀請好友拿line points 開始-->
+          <div class="cotent-box">
+            <div class="big-title-2"><img src="img/title-02.png" alt="" /></div>
+            <div class="small-title">成功邀請5位好友完成事前預約，就有機會獲得LINE POINTS 50點兌換序號。</div>
+            <div class="invite">
+              <div id="beinvited-1" class="invite__item">
+                <img src="img/icon-add-border.png" alt="" />
+                <img src="img/avatar.jpg" alt="" />
+              </div>
+              <div id="beinvited-2" class="invite__item">
+                <img src="img/icon-add.png" alt="" />
+              </div>
+              <div id="beinvited-3" class="invite__item">
+                <img src="img/icon-add.png" alt="" />
+              </div>
+              <div id="beinvited-4" class="invite__item">
+                <img src="img/icon-add.png" alt="" />
+              </div>
+              <div id="beinvited-5" class="invite__item">
+                <img src="img/icon-add.png" alt="" />
+              </div>
+            </div>
+            <div class="invite__btn">
+              <a href="javascript:;"><img src="img/button-share.png" alt="邀請好友" /></a>
+            </div>
+          </div>
+          <!--邀請好友拿line points 結束-->
+
+          <!--遊戲介紹 開始-->
+          <img class="info-pic" src="img/info-01.png" alt="" />
+          <div class="info">
+            <div class="small-title">《傳奇-跨世代》經典全新進化，重磅歸來！開啟全民掌上千人在線攻城，戰鬥鑄就王者霸業！重溫經典瑪法。無兄弟不熱血！一起鑄就輝煌！靠裝備，更靠技術！打造最強幫會！專屬套裝霸氣附體！外觀拉風屬性爆炸！</div>
+          </div>
+          <div class="divider"><img src="img/divider.png" alt="" /></div>
+
+          <!--漸層背景 開始-->
+          <div class="gradient-bg">
+            <!--區塊一 開始-->
+            <div class="info-1">
+              <img src="img/info-02.png" alt="" />
+              <div>
+                <div class="big-title mb-4">青春熱血 經典升級</div>
+                <div class="small-title">傳世榮耀，百萬行會，千萬兄弟，一呼百應，再戰沙城！原版復刻端遊經典設定，戰法道三職業、打寶、爆裝、熱血攻沙，指間馳騁"傳世經典"。</div>
+              </div>
+            </div>
+            <!--區塊一 結束-->
+            <!--區塊二 開始-->
+            <div class="info-2">
+              <div>
+                <div class="big-title mb-4">PK爆裝 熱血攻沙</div>
+                <div class="small-title">自由PK，血戰紅名，殺人爆物，血性刺激！落霞奪寶、鏢車護送、領地爭奪、激情攻沙……豐富的PvP玩法，待妳一戰成名！</div>
+              </div>
+              <img src="img/info-03.png" alt="" />
+            </div>
+            <!--區塊二 結束-->
+            <!--區塊三 開始-->
+            <div class="info-3">
+              <div>
+                <img src="img/info-04-1.jpg" alt="" />
+                <div class="big-title mt-3 mb-2">激情打寶 自由交易</div>
+                <div class="small-title mb-2">超激情打寶體驗，極品裝備、高級技能打怪爆，自由交易隨心所欲。 行會、紅包……多元化社交玩法，妳不是一個人在戰鬥！</div>
+              </div>
+              <div>
+                <div class="big-title mb-4">千人同屏 精準擊殺</div>
+                <div class="small-title mb-5">PK系統深度優化，UE體驗創新設定，操作手感超暢爽，千人同屏熱血攻沙，一鍵鎖定精準擊殺，尋敵千裏取敵首級。</div>
+                <img src="img/info-04-2.jpg" alt="" />
+              </div>
+            </div>
+            <div class="content-reserve">
+              <a href="javascript:;"><img src="img/button-login.png" alt="立即預約" /></a>
+              <a href="javascript:;"><img src="img/button-share.png" alt="邀請好友" /></a>
+            </div>
+            <!--區塊三 結束-->
+            <div class="divider"><img src="img/divider.png" alt="" /></div>
+            <!--遊戲介紹 結束-->
+
+            <!--外部連結 開始-->
+
+            <div class="link">
+              <a href="https://yahoo.wakool.net/game_center" target="_blank"><img src="img/link-y5games.png" alt="" /></a>
+              <a href="https://www.facebook.com/Y5FUN/" target="_blank"><img src="img/link-y5fb.png" alt="" /></a>
+              <a href="https://www.facebook.com/%E5%82%B3%E5%A5%87%E8%B7%A8%E4%B8%96%E4%BB%A3-100208341723761/" target="_blank"><img src="img/link-fb.png" alt="" /></a>
+            </div>
+            <div class="divider"><img src="img/divider.png" alt="" /></div>
+            <!--外部連結 結束-->
+
+            <!--注意事項 開始-->
+            <div class="notice">
+              <div class="big-title-3 mb-3"><img src="img/title-03.png" alt="" /></div>
+              <div class="txt">
+                1. 事前預約活動時間：即日起至傳奇 跨世代正式公開日前一晚23:59，時間還請密切留意官方粉絲團。<br />
+                2. 事前預約各項活動獎勵皆以序號發放，各位玩家可以至粉絲頁查詢。<br />
+                3. 邀請好友LINE POINTS 50點序號得獎名單，於活動結束後一週內於粉絲頁公告。<br />
+                4. 本次活動的所有獎勵不可折換現金。<br />
+                5. 本次活動皆以遊戲中實際領取為基準，若有更動，另行於官網、官方粉絲團公告之。<br />
+                6. 本公司保留所有活動的舉辦、暫停、更換、終止之最終權利，若遇不可抗力之因素，本活動將有全部或部分暫停、延後舉辦或取消的權利。如有其他未盡事宜，有權隨時補充修正，並以最新公告為準。
+              </div>
+            </div>
+            <!--注意事項 結束-->
+          </div>
+          <!--漸層背景 結束-->
+        </section>
+      </main>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.min.js"></script>
+    <script>
+      window.onload = function (e) {
+        const eventDateProvided = '2020-06-07T23:59:59-08:00'
+        const convertEventDate = moment.utc(eventDateProvided).format('DD-MM-YYYY HH:mm:ss')
+
+        var $clock = $('#clock'),
+          eventTime = moment(convertEventDate, 'DD-MM-YYYY HH:mm:ss'),
+          interval = 1000,
+          $d = document.querySelector('#days'),
+          $h = document.querySelector('#hours'),
+          $m = document.querySelector('#minutes')
+        $ms = document.querySelector('#seconds')
+        setInterval(function () {
+          var currentTime = moment(),
+            diffDays = eventTime.diff(currentTime, 'days'),
+            diffHours = eventTime.diff(currentTime, 'hours'),
+            diffMinutes = eventTime.diff(currentTime, 'minutes')
+          difSeconds = eventTime.diff(currentTime, 'seconds')
+
+          var d = diffDays,
+            h = diffHours - diffDays * 24,
+            m = diffMinutes - diffHours * 60
+          ms = difSeconds - diffMinutes * 60
+
+          // console.log(eventTime)
+
+          d = $.trim(d).length === 1 ? '0' + d : d
+          h = $.trim(h).length === 1 ? '0' + h : h
+          m = $.trim(m).length === 1 ? '0' + m : m
+          ms = $.trim(ms).length === 1 ? '0' + ms : ms
+
+          $('.day-d').text(d)
+          $('.day-h').text(h)
+          $('.day-m').text(m)
+          $('.day-s').text(ms)
+          $('.timer').html(d + '：' + h + '：' + m + '：' + ms)
+        }, interval)
+      }
+    </script>
+
+    <script>
+      //寫在日記
+      // window.onload = function () {
+      //   console.log('dh', $(document).height())
+      //   $('.content-wrapper').css('min-height', $(document).height())
+      // }
+
+      // $(window).resize(function () {
+      //   $('.content-wrapper').css('min-height', '0')
+      //   resizePB()
+      // })
+
+      // function resizePB() {
+      //   console.log('dh-resize', $(document).height())
+      //   $('.content-wrapper').css('min-height', $(document).height())
+      // }
+
+      let wh = $(window).height() //視窗可視高
+      let lock = false // 如果到达指定位置，则不再执行打印log
+
+      //總達成目標 = 20000
+      //級距 000 , 5000 , 10000 , 20000
+      let goalCount = 5000 //目前達成人數
+
+      window.addEventListener('scroll', function () {
+        // getBoundingClientRect()-得到矩形元素的界线
+        // 可返回top, left, right,bottom 四個屬性
+        // 視窗左上角開始計算
+        let targetRect = $('.progress')[0].getBoundingClientRect()
+        let targetTop = targetRect.top //元素到top視窗頂端的距離
+
+        if (lock) {
+          //lock開啟-->不跑進度條
+          return false
+        } else {
+          //如果目標元素小於[視窗可視高度的一半]就跑進度條(也就是進度條位置到視窗的中間才動作)
+          if (targetTop < wh / 2) {
+            lock = true
+            if (goalCount == 2000) {
+              $('.prog').css('width', Math.round((2000 / 20000) * 100) + '%')
+            } else if (goalCount == 5000) {
+              $('.prog').css('width', Math.round((5000 / 20000) * 100) + '%')
+            } else if (goalCount == 10000) {
+              $('.prog').css('width', Math.round((10000 / 20000) * 100) + '%')
+            } else if (goalCount == 20000) {
+              $('.prog').css('width', Math.round((20000 / 20000) * 100) + '%')
+            }
+          }
+        }
+      })
+
+      let $window = $(window)
+      let $box = $('.countdown-bot')
+
+      //裝置變動時，重抓高度
+      $(window).resize(function () {
+        wh = $(window).height()
+      })
+      timeBox()
+      function timeBox() {
+        $window.scroll(function () {
+          var scrollTop = $window.scrollTop()
+          let boxRect = $('.countdownEnd')[0].getBoundingClientRect()
+          let boxRectTop = boxRect.top //元素到top視窗頂端的距離
+          let videoRectBot = $('.countdownEnd')[0].getBoundingClientRect().top
+          //console.log('boxRectTop', boxRectTop)
+          //console.log('videoRectBot', videoRectBot)
+          //console.log('wh / 3 = ', wh / 3)
+          if (boxRectTop < wh / 3) {
+            $box.css({ transform: 'translate(50%,' + (wh - wh / 3) + 'px)' })
+            $box.css({ position: 'fixed' })
+            $box.css({ right: '11%', top: '3%' })
+            $box.css({ 'z-index': '999' })
+          }
+
+          if (videoRectBot > 0) {
+            $box.css({ transform: 'translate(0, 0)' })
+            $box.css({ position: 'absolute' })
+            $box.css({ right: '0', top: '0' })
+            $box.css({ 'z-index': '0' })
+          }
+        })
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+.header {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  // height: 100%;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 20%;
+  & .title {
+    & img {
+      width: 40%;
+    }
+  }
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  & img {
+    width: 100%;
+  }
+}
+
+.gradient-bg {
+  background: #611409;
+  background: -moz-linear-gradient(top, #611409 0%, #1d1110 100%);
+  background: -webkit-linear-gradient(top, #611409 0%, #1d1110 100%);
+  background: linear-gradient(to bottom, #611409 0%, #1d1110 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#61140a', endColorstr='#1d1110',GradientType=0 );
+}
+@media (max-width: 767.98px) {
+  .header {
+    padding-bottom: 25%;
+  }
+  .header .title img {
+    width: 60%;
+  }
+}

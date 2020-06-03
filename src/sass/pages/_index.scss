@@ -1,0 +1,63 @@
+
+.main-area {
+  position: absolute;
+  top: 50vw;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  & .title {
+    position: absolute;
+    top: -7%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    & img {
+      width: 40%;
+    }
+  }
+  & .video {
+    position: absolute;
+    top: -2vw;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 29.1%;
+    z-index: 1;
+    &__bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      width: 85%;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .main-area {
+    top: 0;
+    margin: 30% auto 0;
+  }
+
+  .main .video {
+    top: -2.5vw;
+    width: 34.1%;
+  }
+  .main .video__bg {
+    width: 100%;
+  }
+}
+
+
